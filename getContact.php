@@ -7,7 +7,7 @@ $db_password = "rt3q65w92v53w29q";
 $connection = mysqli_connect('jnc6n3xpbgc3kek2.chr7pe7iynqr.eu-west-1.rds.amazonaws.com', 'exievz51r0py9g1v', 'rt3q65w92v53w29q');
 mysqli_select_db($connection,$db_name) or die("Error al seleccionar la base de datos:".mysqli_error());
 
-//mysql_select_db("lhgjmfsupyod65vz") or die("Error al seleccionar la base de datos:".mysql_error());
+mysql_select_db("lhgjmfsupyod65vz") or die("Error al seleccionar la base de datos:".mysql_error());
 @mysqli_query("SET NAMES 'utf8'");
 
 if(isset($_POST["id_producto"])){
